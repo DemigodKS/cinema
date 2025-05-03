@@ -37,28 +37,3 @@ async def main():
 asyncio.run(main())
 
 
-#         async with engine.connect() as conn:
-#             await conn.execute(
-#                 Model.model.insert(),[{"title": rr}]
-#                 )
-# async def main():
-#         ff = Movie_service()
-#         dd = await ff.add_movie_by_title(title='Big')
-# asyncio.run(main())
-# async def async_main() -> None:
-#     dd = Movie_service()
-#     res = await dd.add_movie_by_title('Big')
-
-
-
-
-# async def async_main() -> None:
-#     engine = create_async_engine("sqlite+aiosqlite:///model.db", echo=False)
-#     async with engine.begin() as conn:
-#         await conn.run_sync(models.meta.drop_all)
-#         await conn.run_sync(models.meta.create_all)
-#
-#         await conn.execute(
-#             Model.mn.insert(),[{"title": OmdbClient.search_movie()}]
-#         )
-# asyncio.run(async_main())
